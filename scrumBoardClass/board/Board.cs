@@ -19,21 +19,25 @@ namespace ScrumBoardService
             Name = name;
             Columns = new List<IColumn>();
         }
-        public void AddTask(ITask task,int index = 0) 
+        public void AddTask(IScrumBoardTask task,int index = 0) 
         {
-            if (index > Columns.Count && index <= 0) 
+            if (index > Columns.Count || index < 0) 
             {
                 throw new ArgumentException("OUT_OF_RANGE");
             };
             this.Columns[index].AddTask(task);
+            
         }
         public void AddColumn(IColumn column) 
         {
-            if (Columns.Count != SIZE_OF_BOARD)
+            if ((Columns.Count <= SIZE_OF_BOARD-1))
             {
                 Columns.Add(column);
             }
-            else { throw new ArgumentException("TO_BIG"); }
+            else 
+            { 
+                throw new ArgumentException("TO_BIG"); 
+            }
         }
     }
     //доска состоит из подразделов которые состоят из прикреплённых к ним тасков

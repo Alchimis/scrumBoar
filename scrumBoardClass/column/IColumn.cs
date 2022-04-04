@@ -10,7 +10,7 @@ namespace scrumBoard.scrumBoardClass.column
     internal interface IColumn
     {
         public string Name { get; set; }
-        public void AddTask(ITask task) { }
-        public List<ITask> Tasks { get; set; }
+        public void AddTask(IScrumBoardTask task) { }
+        public List<IScrumBoardTask> Tasks { get; set; }
     }
 }

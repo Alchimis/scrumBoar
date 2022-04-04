@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace scrumBoard.scrumBoardClass.task
 {
-    public interface ITask
+    public interface IScrumBoardTask
     {
         public string Name { get; set; }    
         public string Description { get; set; }
-        
         public TaskPriority Priority { get; set; }  
     }
 }

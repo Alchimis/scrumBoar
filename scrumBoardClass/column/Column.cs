@@ -12,14 +12,14 @@ namespace scrumBoard.scrumBoardClass.column
         public Column(string name) 
         {
             Name = name;
-            Tasks = new List<ITask>(); 
+            Tasks = new List<IScrumBoardTask>(); 
         }
         public string Name { get; set; }
 
-        public void AddTask(ITask task) 
+        public void AddTask(IScrumBoardTask task) 
         {
             this.Tasks.Add(task);
         }
-        public List<ITask> Tasks { get; set; }
+        public List<IScrumBoardTask> Tasks { get; set; }
     }
 }

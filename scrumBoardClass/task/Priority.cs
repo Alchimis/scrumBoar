@@ -8,9 +8,9 @@ namespace scrumBoard.scrumBoardClass.task
 {
     public enum TaskPriority
     {
-        NEUTRAL =0,
-        LOW =1,
-        MEDIUM =2,
-        HIGH =3
+        NEUTRAL ,
+        LOW ,
+        MEDIUM ,
+        HIGH
     }
 }

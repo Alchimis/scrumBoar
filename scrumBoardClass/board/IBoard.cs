@@ -14,7 +14,7 @@ namespace scrumBoard.scrumBoardClass.board
 
        private const int SIZE_OF_BOARD = 10;
        public List<IColumn> Columns { get; set; } 
-       public void AddTask(ITask task,int index = 0) { }
+       public void AddTask(IScrumBoardTask task,int index = 0) { }
        public void AddColumn(IColumn column) { }
        public string Name { get; set; }
 

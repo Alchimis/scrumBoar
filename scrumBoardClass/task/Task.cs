@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace scrumBoard.scrumBoardClass.task
 {
-    internal class Task: ITask
+    internal class ScrumBoardTask: IScrumBoardTask
     {
-        public Task(string name,string discription,TaskPriority priority) 
+        public ScrumBoardTask(string name,string discription,TaskPriority priority) 
         { 
             Name = name;
             Description = discription; 
