@@ -15,7 +15,6 @@ namespace ScrumBoardService
             IBoard board = new Board("you_can_always_make_a_calculator_out_of_this");
             board.AddColumn(column);
             board.AddTask(task,0);
-            //board.AddTask(task, 10);
             return 0;
         }
     }
