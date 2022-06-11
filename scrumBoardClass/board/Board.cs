@@ -11,8 +11,14 @@ namespace ScrumBoardService
     public class Board
     {
         private const int SizeOfBoard = 10;
-        public List<Column> Columns { get; set; }
-        public string Name { get; set; }
+        public List<Column> Columns
+        {
+            get; set;
+        }
+        public string Name
+        {
+            get; set;
+        }
         public Board(string name)
         {
             Name = name;
