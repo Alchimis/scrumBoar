@@ -14,10 +14,25 @@ public class ScrumBoardTask
         Description = discription;
         Priority = priority;
     }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public void SetName(string name) { Name = name; }
-    public void SetDescription(string description) { Description = description; }
-    public TaskPriority Priority { get; set; }
+    public string Name
+    {
+        get; set;
+    }
+    public string Description
+    {
+        get; set;
+    }
+    public void SetName(string name)
+    {
+        Name = name;
+    }
+    public void SetDescription(string description)
+    {
+        Description = description;
+    }
+    public TaskPriority Priority
+    {
+        get; set;
+    }
 
 }
